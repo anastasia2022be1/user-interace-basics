@@ -4,17 +4,19 @@ dem Browser mitzuteilen, in welcher HTML-Version das Dokument geschrieben ist.
 Anhand des Doctypes ermittelt der Browser die HTML-Version und zeigt die Seite korrekt an. Die Dokumenttypdeklaration
 sollte das allererste sein, was der Browser sieht, wenn er ein HTML-Dokument <verarbeitet class=" -->
     <!--Das <html>-Tag ist das Stammelement des Dokuments als Container, der den gesamten Inhalt der Seite umschließt. Alles, was sich außerhalb davon befindet, wird vom Browser nicht als HTML-Code wahrgenommen und nicht verarbeitet.-->
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
+<html lang="en"> 
+    <!--Das <html>-Tag ist das Stammelement des Dokuments als Container, der den gesamten Inhalt der Seite umschließt. Alles, was sich außerhalb davon befindet, wird vom Browser nicht als HTML-Code wahrgenommen und nicht verarbeitet.-->
+        <!--Das lang-Attribut gibt an, in welcher Sprache der Seitentext geschrieben ist. Dies ist für unterstützende Technologien wie Screenreader usw. erforderlich.-->
+    <head> <!--Das <head>-Tag dient zum Speichern von Serviceinformationen zur Seite: Titel, Beschreibung, Kodierung usw. Alle diese Informationen werden nicht im Browserfenster angezeigt, sondern enthalten Daten, die dem Browser mitteilen, wie die Seite verarbeitet werden soll.-->
+        <meta charset="UTF-8" /> <!--Das <meta>-Tag wird zum Speichern von Informationen verwendet, die für den Browser und Suchmaschinen bestimmt sind: Festlegen der Dokumentkodierung, Übertragen von Informationen an Suchmaschinen und vieles mehr. Es kann mehrere Meta-Tags geben, da diese je nach verwendeten Attributen unterschiedliche Informationen enthalten.-->
         <meta name="author" content="Anastasia Sevastianova" />
-        <meta name="discription" content="This website is just an exercise the basic html structure" />
-        <title>Basic Structure Practice</title>
+        <meta name="discription" content="This website is just an exercise the basic html structure" /> <!--Mit diesem Tag kannst du die Seite kurz beschreiben. In bestimmten Fällen wird diese Beschreibung im Such-Snippet verwendet, das in den Suchergebnissen angezeigt wird.-->
+        <title>Basic Structure Practice</title> <!--Der im <title>-Tag platzierte Text wird im Browser-Tab angezeigt. Der Titel sollte nicht länger als 60 Zeichen sein, damit er vollständig in den Titel passt. Der Titeltext sollte eine kurze Beschreibung des Inhalts der Webseite enthalten.-->
 
     </head>
-    <body>
-        <h1>This is the most important heading</h1>
-        <h2>This heading is a little less important</h2>
+    <body> <!--Das <body>-Tag enthält den Inhalt der zukünftigen Webseite. Der Inhalt, der auf der Seite angezeigt werden soll, sollte sich innerhalb dieses Tags befinden.-->
+        <h1>This is the most important heading</h1> <!--Das <h1>-Tag wird meist nur einmal verwendet, und zwar als Hauptüberschrift der Seite. Die restlichen Überschriften können beliebig oft verwendet werden, sie sollten jedoch immer korrekt und in einer Hierarchie verwendet werden.-->
+        <h2>This heading is a little less important</h2> <!--Tag-Gruppe <h1>...<h6> – definiert Textüberschriften von semantischen Abschnitten verschiedener Ebenen, die die Bedeutung des darauf folgenden Inhaltsabschnitts angeben. Dabei handelt es sich um ein Tool zur Strukturierung von Textinhalten.-->
         <h3>This heading is even less important than the one above</h3>
     </body>
 </html>
