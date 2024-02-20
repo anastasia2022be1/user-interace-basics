@@ -1,5 +1,10 @@
 .heading {
     color: blue;
+    text-align: start;
+
+}
+.my-list {
+    text-decoration: underline;
 }
 .my-list-element {
     font-weight: bold;
@@ -7,4 +12,18 @@
 #special-heading {
     font-size: 40px;
     color: red;
+}
+.section {
+    margin: 15px;
+    padding: auto;
+    border: 2px black solid;
+}
+.section-ordnered-list {
+    background-color: bisque;
+}
+.section-shoping-list {
+background-color: azure;
+}
+.section-carrot-cake {
+    background-color: bisque;
 }
