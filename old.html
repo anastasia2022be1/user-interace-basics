@@ -1,79 +1,115 @@
-<!DOCTYPE html> <!--<!DOCTYPE> ist kein Tag, sondern eine obligatorische Anweisung zur Deklaration eines Dokumenttyps. Es ist erforderlich,
+<!DOCTYPE html>
+<!--<!DOCTYPE> ist kein Tag, sondern eine obligatorische Anweisung zur Deklaration eines Dokumenttyps. Es ist erforderlich,
 dem Browser mitzuteilen, in welcher HTML-Version das Dokument geschrieben ist.
 
 Anhand des Doctypes ermittelt der Browser die HTML-Version und zeigt die Seite korrekt an. Die Dokumenttypdeklaration
 sollte das allererste sein, was der Browser sieht, wenn er ein HTML-Dokument <verarbeitet class=" -->
-    <!--Das <html>-Tag ist das Stammelement des Dokuments als Container, der den gesamten Inhalt der Seite umschließt. Alles, was sich außerhalb davon befindet, wird vom Browser nicht als HTML-Code wahrgenommen und nicht verarbeitet.-->
-<html lang="en"> 
-    <!--Das <html>-Tag ist das Stammelement des Dokuments als Container, der den gesamten Inhalt der Seite umschließt. Alles, was sich außerhalb davon befindet, wird vom Browser nicht als HTML-Code wahrgenommen und nicht verarbeitet.-->
-        <!--Das lang-Attribut gibt an, in welcher Sprache der Seitentext geschrieben ist. Dies ist für unterstützende Technologien wie Screenreader usw. erforderlich.-->
-    <head> <!--Das <head>-Tag dient zum Speichern von Serviceinformationen zur Seite: Titel, Beschreibung, Kodierung usw. Alle diese Informationen werden nicht im Browserfenster angezeigt, sondern enthalten Daten, die dem Browser mitteilen, wie die Seite verarbeitet werden soll.-->
-        <meta charset="UTF-8" /> <!--Das <meta>-Tag wird zum Speichern von Informationen verwendet, die für den Browser und Suchmaschinen bestimmt sind: Festlegen der Dokumentkodierung, Übertragen von Informationen an Suchmaschinen und vieles mehr. Es kann mehrere Meta-Tags geben, da diese je nach verwendeten Attributen unterschiedliche Informationen enthalten.-->
-        <meta name="author" content="Anastasia Sevastianova" />
-        <meta name="discription" content="This website is just an exercise the basic html structure" /> <!--Mit diesem Tag kannst du die Seite kurz beschreiben. In bestimmten Fällen wird diese Beschreibung im Such-Snippet verwendet, das in den Suchergebnissen angezeigt wird.-->
-        <title>Basic Structure Practice</title> <!--Der im <title>-Tag platzierte Text wird im Browser-Tab angezeigt. Der Titel sollte nicht länger als 60 Zeichen sein, damit er vollständig in den Titel passt. Der Titeltext sollte eine kurze Beschreibung des Inhalts der Webseite enthalten.-->
-
-    </head>
-    <body> <!--Das <body>-Tag enthält den Inhalt der zukünftigen Webseite. Der Inhalt, der auf der Seite angezeigt werden soll, sollte sich innerhalb dieses Tags befinden.-->
-        <h1>This is the most important heading</h1> <!--Das <h1>-Tag wird meist nur einmal verwendet, und zwar als Hauptüberschrift der Seite. Die restlichen Überschriften können beliebig oft verwendet werden, sie sollten jedoch immer korrekt und in einer Hierarchie verwendet werden.-->
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, quidem. Dolor omnis odio nobis, minus, quam vitae tenetur numquam doloribus iusto obcaecati officiis pariatur dolores tempora! Incidunt repellendus ipsa omnis.</p> <!--Das <p>-Tag ist ein universeller Container zum Gruppieren kleiner Phrasenelemente, deren Trennung voneinander und zur weiteren Gestaltung. Standardmäßig ist ein Absatz ein Blockelement, das heißt, er beginnt in einer neuen Zeile und verfügt über vertikale Einzüge, die in CSS geändert werden können.-->
-        <h2>This heading is a little less important</h2> <!--Tag-Gruppe <h1>...<h6> – definiert Textüberschriften von semantischen Abschnitten verschiedener Ebenen, die die Bedeutung des darauf folgenden Inhaltsabschnitts angeben. Dabei handelt es sich um ein Tool zur Strukturierung von Textinhalten.-->
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi exercitationem ea nisi magni nobis, eos minima fugiat adipisci dolore voluptas fugit perspiciatis molestiae corrupti odit quia et dolorem deleniti ratione.</p>
-        <h3>This heading is even less important than the one above</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem rerum est hic quia, atque quasi ad asperiores quos pariatur delectus distinctio consequuntur totam consequatur voluptatum fugiat! Nisi reiciendis ea accusantium?</p>
-        <h4>Semantik</h4>
-        <p>Das Layout einer zukünftigen Webseite sollte sinnvoll sein, genau wie eine Zeitungs- oder Zeitschriftenseite. Die Seite
-        verfügt über Abschnitte, Überschriften, Listen, Bilder, Textabsätze usw. Um all diese Fülle an Inhaltstypen zu
-        beschreiben, gibt es entsprechende Tags. Das heißt, Semantik ist von Natur aus Teil von HTML, aber sie ist nutzlos, wenn
-        sie falsch implementiert wird.</p>
-        <p><strong>Semantisches Markup</strong> ist ein Ansatz zur Erstellung von HTML-Markup, der auf der Verwendung von Tags basiert, die ihrem
-        Zweck gemäß der Spezifikation entsprechen und für die Art des auszuzeichnenden Inhalts geeignet sind.</p>
-        <!--as <strong>-Tag hebt Text semantisch als wichtig hervor und zeigt an, dass es sich um ein bedeutsames Wort oder einen bedeutsamen Satz handelt. Markieren Sie beispielsweise eine Warnung oder einen beliebigen Teil des Textes, auf den der Benutzer zuerst achten sollte.-->
-        <img src="./images/semantics.jpg" alt="photo of semantics structure" width="480">
-       <p>Semantisches Markup bedeutet, dass Tags nicht auf der Grundlage ihrer Darstellung im Browser ausgewählt werden, sondern
-    auf der Grundlage der Art und Struktur des mit Tags versehenen Inhalts.</p>
-    <em>Hervorgehobener / kursiver Text</em> <!--Das <em>-Tag (Abkürzung für „Hervorhebung“) hebt semantisch Text hervor, der eine besondere Hervorhebung hat, und verändert so die Bedeutung der Phrase. Sie können beispielsweise Sarkasmus hervorheben.-->
-    <hr>
-    <div> <!--Das <div>-Tag ist ein generischer Container ohne semantische Bedeutung. Wird als Wrapper-Block für die spätere Inhaltsgestaltung verwendet.-->
-        <ul> <!--Das <ul>-Tag erstellt eine Liste mit Aufzählungszeichen (ungeordnet), deren jedes Element mit einem kleinen Zeichen (Aufzählungszeichen) beginnt. Mithilfe von CSS kann der Marker entfernt oder ersetzt werden.
+<!--Das <html>-Tag ist das Stammelement des Dokuments als Container, der den gesamten Inhalt der Seite umschließt. Alles, was sich außerhalb davon befindet, wird vom Browser nicht als HTML-Code wahrgenommen und nicht verarbeitet.-->
+<html lang="en">
+  <!--Das <html>-Tag ist das Stammelement des Dokuments als Container, der den gesamten Inhalt der Seite umschließt. Alles, was sich außerhalb davon befindet, wird vom Browser nicht als HTML-Code wahrgenommen und nicht verarbeitet.-->
+  <!--Das lang-Attribut gibt an, in welcher Sprache der Seitentext geschrieben ist. Dies ist für unterstützende Technologien wie Screenreader usw. erforderlich.-->
+  <head>
+    <!--Das <head>-Tag dient zum Speichern von Serviceinformationen zur Seite: Titel, Beschreibung, Kodierung usw. Alle diese Informationen werden nicht im Browserfenster angezeigt, sondern enthalten Daten, die dem Browser mitteilen, wie die Seite verarbeitet werden soll.-->
+    <meta charset="UTF-8" />
+    <!--Das <meta>-Tag wird zum Speichern von Informationen verwendet, die für den Browser und Suchmaschinen bestimmt sind: Festlegen der Dokumentkodierung, Übertragen von Informationen an Suchmaschinen und vieles mehr. Es kann mehrere Meta-Tags geben, da diese je nach verwendeten Attributen unterschiedliche Informationen enthalten.-->
+    <meta name="author" content="Anastasia Sevastianova" />
+    <meta name="discription" content="This website is just an exercise the basic html structure" />
+    <!--Mit diesem Tag kannst du die Seite kurz beschreiben. In bestimmten Fällen wird diese Beschreibung im Such-Snippet verwendet, das in den Suchergebnissen angezeigt wird.-->
+    <title>Basic Structure Practice</title>
+    <!--Der im <title>-Tag platzierte Text wird im Browser-Tab angezeigt. Der Titel sollte nicht länger als 60 Zeichen sein, damit er vollständig in den Titel passt. Der Titeltext sollte eine kurze Beschreibung des Inhalts der Webseite enthalten.-->
+  </head>
+  <body>
+    <!--Das <body>-Tag enthält den Inhalt der zukünftigen Webseite. Der Inhalt, der auf der Seite angezeigt werden soll, sollte sich innerhalb dieses Tags befinden.-->
+    <h1>This is the most important heading</h1>
+    <!--Das <h1>-Tag wird meist nur einmal verwendet, und zwar als Hauptüberschrift der Seite. Die restlichen Überschriften können beliebig oft verwendet werden, sie sollten jedoch immer korrekt und in einer Hierarchie verwendet werden.-->
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, quidem. Dolor omnis odio nobis,
+      minus, quam vitae tenetur numquam doloribus iusto obcaecati officiis pariatur dolores tempora!
+      Incidunt repellendus ipsa omnis.
+    </p>
+    <!--Das <p>-Tag ist ein universeller Container zum Gruppieren kleiner Phrasenelemente, deren Trennung voneinander und zur weiteren Gestaltung. Standardmäßig ist ein Absatz ein Blockelement, das heißt, er beginnt in einer neuen Zeile und verfügt über vertikale Einzüge, die in CSS geändert werden können.-->
+    <h2>This heading is a little less important</h2>
+    <!--Tag-Gruppe <h1>...<h6> – definiert Textüberschriften von semantischen Abschnitten verschiedener Ebenen, die die Bedeutung des darauf folgenden Inhaltsabschnitts angeben. Dabei handelt es sich um ein Tool zur Strukturierung von Textinhalten.-->
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi exercitationem ea nisi magni
+      nobis, eos minima fugiat adipisci dolore voluptas fugit perspiciatis molestiae corrupti odit
+      quia et dolorem deleniti ratione.
+    </p>
+    <h3>This heading is even less important than the one above</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem rerum est hic quia, atque
+      quasi ad asperiores quos pariatur delectus distinctio consequuntur totam consequatur
+      voluptatum fugiat! Nisi reiciendis ea accusantium?
+    </p>
+    <h4>Semantik</h4>
+    <p>
+      Das Layout einer zukünftigen Webseite sollte sinnvoll sein, genau wie eine Zeitungs- oder
+      Zeitschriftenseite. Die Seite verfügt über Abschnitte, Überschriften, Listen, Bilder,
+      Textabsätze usw. Um all diese Fülle an Inhaltstypen zu beschreiben, gibt es entsprechende
+      Tags. Das heißt, Semantik ist von Natur aus Teil von HTML, aber sie ist nutzlos, wenn sie
+      falsch implementiert wird.
+    </p>
+    <p>
+      <strong>Semantisches Markup</strong> ist ein Ansatz zur Erstellung von HTML-Markup, der auf
+      der Verwendung von Tags basiert, die ihrem Zweck gemäß der Spezifikation entsprechen und für
+      die Art des auszuzeichnenden Inhalts geeignet sind.
+    </p>
+    <!--as <strong>-Tag hebt Text semantisch als wichtig hervor und zeigt an, dass es sich um ein bedeutsames Wort oder einen bedeutsamen Satz handelt. Markieren Sie beispielsweise eine Warnung oder einen beliebigen Teil des Textes, auf den der Benutzer zuerst achten sollte.-->
+    <img src="./images/semantics.jpg" alt="photo of semantics structure" width="480" />
+    <p>
+      Semantisches Markup bedeutet, dass Tags nicht auf der Grundlage ihrer Darstellung im Browser
+      ausgewählt werden, sondern auf der Grundlage der Art und Struktur des mit Tags versehenen
+      Inhalts.
+    </p>
+    <em>Hervorgehobener / kursiver Text</em>
+    <!--Das <em>-Tag (Abkürzung für „Hervorhebung“) hebt semantisch Text hervor, der eine besondere Hervorhebung hat, und verändert so die Bedeutung der Phrase. Sie können beispielsweise Sarkasmus hervorheben.-->
+    <hr />
+    <div>
+      <!--Das <div>-Tag ist ein generischer Container ohne semantische Bedeutung. Wird als Wrapper-Block für die spätere Inhaltsgestaltung verwendet.-->
+      <ul>
+        <!--Das <ul>-Tag erstellt eine Liste mit Aufzählungszeichen (ungeordnet), deren jedes Element mit einem kleinen Zeichen (Aufzählungszeichen) beginnt. Mithilfe von CSS kann der Marker entfernt oder ersetzt werden.
 
 Wird verwendet, um eine Gruppe in zufälliger Reihenfolge aufzulisten, beispielsweise eine Liste von Resorts.-->
-            <li>Pacome</li>
-            <li>Patrick</li>
-            <li>Sükru</li>
-            <li>Bilal</li>
-            <li>Michael</li>
-            <li>Kevin</li>
-        </ul>
+        <li>Pacome</li>
+        <li>Patrick</li>
+        <li>Sükru</li>
+        <li>Bilal</li>
+        <li>Michael</li>
+        <li>Kevin</li>
+      </ul>
     </div>
     <br />
-    <div> 
-        <ol> <!--Das <ol>-Tag erstellt eine nummerierte (geordnete) Liste, d. h. jedes Element der Liste ist nummeriert. Der Browser nummeriert die Elemente automatisch der Reihe nach. Wenn Sie ein oder mehrere Elemente einer solchen Liste löschen, werden die verbleibenden Nummern automatisch neu berechnet. Die Nummerierung von Elementen kann über spezielle Listenattribute gesteuert werden.
+    <div>
+      <ol>
+        <!--Das <ol>-Tag erstellt eine nummerierte (geordnete) Liste, d. h. jedes Element der Liste ist nummeriert. Der Browser nummeriert die Elemente automatisch der Reihe nach. Wenn Sie ein oder mehrere Elemente einer solchen Liste löschen, werden die verbleibenden Nummern automatisch neu berechnet. Die Nummerierung von Elementen kann über spezielle Listenattribute gesteuert werden.
 
 Wird verwendet, um Schritte in einer bestimmten Reihenfolge aufzulisten, beispielsweise in einem Rezept.-->
-            <li>Arian</li>
-            <li>Sebastian</li>
-            <li>Stefanie</li>
-            <li>Tarik</li>
-            <li>Zsofia</li>
-        </ol>
+        <li>Arian</li>
+        <li>Sebastian</li>
+        <li>Stefanie</li>
+        <li>Tarik</li>
+        <li>Zsofia</li>
+      </ol>
     </div>
     <header>
-        Header <!--as <header>-Tag hebt den einleitenden Teil der gesamten Seite, eines komplexen Abschnitts oder eines Artikels hervor. Enthält normalerweise ein Logo, eine Navigation, einen Einführungstext und einen komplexen Titel. Es können mehrere pro Seite sein.-->
+      Header
+      <!--as <header>-Tag hebt den einleitenden Teil der gesamten Seite, eines komplexen Abschnitts oder eines Artikels hervor. Enthält normalerweise ein Logo, eine Navigation, einen Einführungstext und einen komplexen Titel. Es können mehrere pro Seite sein.-->
     </header>
     <main>
-        <!-- Markieren Sie <main>Hauptinhalt, der auf anderen Seiten der Website nicht wiederholt wird (einzigartig). Es kann nur eine pro Seite geben.-->
-            <video poster="https://images.pexels.com/photos/595804/pexels-photo-595804.jpeg?w=640" width="640" controls>
-                <source src="http://techslides.com/demos/sample-videos/small.webm" type="video/webm" />
-                <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4" />
-                <source src="http://techslides.com/demos/sample-videos/small.ogg" type="video/ogg" />
-            </video>
-                <!-- Zum Markieren von Videoinhalten wird das gepaarte <video>-Tag verwendet.-->
+      <!-- Markieren Sie <main>Hauptinhalt, der auf anderen Seiten der Website nicht wiederholt wird (einzigartig). Es kann nur eine pro Seite geben.-->
+      <video
+        poster="https://images.pexels.com/photos/595804/pexels-photo-595804.jpeg?w=640"
+        width="640"
+        controls
+      >
+        <source src="http://techslides.com/demos/sample-videos/small.webm" type="video/webm" />
+        <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4" />
+        <source src="http://techslides.com/demos/sample-videos/small.ogg" type="video/ogg" />
+      </video>
+      <!-- Zum Markieren von Videoinhalten wird das gepaarte <video>-Tag verwendet.-->
     </main>
-<nav> 
-    <!--Das <nav>-Tag definiert einen Hauptnavigationsabschnitt mit Links zu Abschnitten der aktuellen oder anderen Seiten. Wird nur für die Hauptnavigation verwendet, nicht für eine Gruppe von Links im Dokument.-->
-</nav>
-
-    </body>
+    <nav>
+      <!--Das <nav>-Tag definiert einen Hauptnavigationsabschnitt mit Links zu Abschnitten der aktuellen oder anderen Seiten. Wird nur für die Hauptnavigation verwendet, nicht für eine Gruppe von Links im Dokument.-->
+    </nav>
+  </body>
 </html>
-
