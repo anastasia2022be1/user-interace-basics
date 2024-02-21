@@ -1,0 +1,13 @@
+/* färbe alle Nachfahren div Elememte blau */
+main div {
+    color: blue;
+}
+footer {
+    
+    height: 900px;
+
+}
+.container .header {
+    background-color: turquoise;
+    width: 680px;
+}
