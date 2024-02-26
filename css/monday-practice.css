@@ -1,0 +1,32 @@
+main {
+    background-color: #bc1da4;
+    height: 100vh;
+}
+footer {
+    background-color: #37393d;
+    height: 400px;
+    margin: 20px;
+}
+h1, h2, h3 {
+    color: rgb(71, 74, 74);
+}
+p {
+    min-height: 50px;
+    width: 100%;
+    background-color: rgba(122, 154, 214, 0.727);
+}
+a {
+    color: #fff;
+}
+a:hover {
+    font-weight: bold;
+}
+.img {
+    box-sizing: border-box;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+img {
+    border: 5px solid white;
+}
