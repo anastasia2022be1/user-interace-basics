@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-size: 16px;
 }
 /* .link-spickzettel {
     color: teal;
@@ -49,4 +50,11 @@ body {
    font-size: 18px;
    /* text-align: center;
    text-indent: 25%; */
+}
+.em-ptactice {
+background-color: #42ac22;
+margin: 1em;
+}
+section {
+    font-size: 30px;
 }
