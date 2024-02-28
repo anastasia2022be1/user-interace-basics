@@ -14,3 +14,17 @@ p {
 #container p {
     color: purple;
 }
+#hund {
+    border: 5px solid black;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+.hund {
+
+    border: 5px solid black;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+
+}
