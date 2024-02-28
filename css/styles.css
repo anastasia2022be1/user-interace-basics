@@ -1,11 +1,16 @@
+/* CSS snippet 1 - 0001*/
 p {
+    color: red;
+}
+/* CSS snippet 2 - 0100*/
+#special {
     color: blue;
-    font-size: 24px;
 }
-a {
-    text-decoration: none;
+/* CSS snippet 3 - 0010*/
+.text {
+    color: green;
 }
-div {
-    color: yellow;
-    background-color: blue;
+/* CSS snippet 4 - 0101*/
+#container p {
+    color: purple;
 }
