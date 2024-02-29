@@ -1,30 +1,29 @@
-/* CSS snippet 1 - 0001*/
+body {
+  color: purple;
+  font-size: 20px;
+}
+
+section {
+  border: 5px solid black;
+}
+section > p {
+  color: initial;
+  border: inherit;
+}
+
+/* unset */
+
+
+
+/* Unterschied zu inital: nicht vom Browser erben
+sondern vom Elternelement */
+/* man kann nur Eigenschaften damit erben die vererbbar sind */
+.reset {
+  font-size: unset;
+}
+
 p {
-    color: red;
-}
-/* CSS snippet 2 - 0100*/
-#special {
-    color: blue;
-}
-/* CSS snippet 3 - 0010*/
-.text {
-    color: green;
-}
-/* CSS snippet 4 - 0101*/
-#container p {
-    color: purple;
-}
-#hund {
-    border: 5px solid black;
-    width: 500px;
-    height: 500px;
-    object-fit: cover;
-}
-.hund {
-
-    border: 5px solid black;
-    width: 500px;
-    height: 500px;
-    object-fit: cover;
-
+  font-family: Arial, sans-serif;
+  color: blue;
+  font-size: 10px;
 }
