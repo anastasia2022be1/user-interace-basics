@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.overflow-test {
+    width: 200px;
+    height: 100px;
+    background-color: #a78989;
+    border: 3px solid black;
+
+
+    overflow: visible;
+    overflow: hidden;
+    overflow: scroll;
+    overflow: auto;
+
+}
